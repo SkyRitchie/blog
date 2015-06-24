@@ -1,5 +1,6 @@
 <%= simple_form_for @post do |form| %>
 	<%= form.input :title %>
+	<%= form.input :author %>
 	<%= form.input :body %>
 	<%= form.input :publication, label: "Where first published" %>
 	<%= form.input :published_at, label: "Date of first publication" %>
