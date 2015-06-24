@@ -14,6 +14,9 @@ before_action :find_post, except: [:index, :new, :create]
   	#We assign an instance variable
   	#Rails sends it to the view if it's there (show)
   	#Rails renders the view
+
+    #Look for comments on this post
+    @comments = @post.comments.all
   end
 
   def new
