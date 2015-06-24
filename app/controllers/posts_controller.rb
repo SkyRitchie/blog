@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+before_action :find_post, except: [:index, :new, :create]
+
   def index
   	# We assign an instance variable
   	@posts = Post.all
