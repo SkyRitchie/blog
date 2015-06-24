@@ -32,3 +32,7 @@ Post.create([
 		published_at: 3.hours.ago
 	}
 ])
+
+post = Post.last
+
+post.comments.create({body: "This is a primary example of why I hate you."})
